@@ -1,6 +1,2 @@
 # Introduction
-## Record Learning Process
-- R
-- Python
-- Biostatistics
-## About me
+This repository is for my [blog](ditannan.github.io).
