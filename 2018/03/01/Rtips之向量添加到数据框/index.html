@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="低碳南">
 <meta property="og:description" content="前言前段时间在和小伙伴一起研究自动输出三线表时，遇到一个问题，就是将所得的一系列指标p值和指标summary表一一对应。说着有点抽象，简单点说就是怎么将一个向量根据名字合并到一个数据集中作为一列。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-01T14:18:22.618Z">
+<meta property="og:updated_time" content="2018-03-01T16:18:24.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Rtips之向量添加到数据框">
 <meta name="twitter:description" content="前言前段时间在和小伙伴一起研究自动输出三线表时，遇到一个问题，就是将所得的一系列指标p值和指标summary表一一对应。说着有点抽象，简单点说就是怎么将一个向量根据名字合并到一个数据集中作为一列。">
@@ -465,7 +465,8 @@
 
 
 <p>大功告成！！！</p>
-<p>其实，有更简单的方法，刚刚我们进行了两步，一步是将p11转化为数据框，再添加了一列变量名。而在大神<code>tibble</code>包中有个函数可以直接做到这步，就是<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">```R</span><br><span class="line">p11</span><br><span class="line">enframe(p11, name = &apos;variables&apos;, value = &apos;P value&apos;)</span><br></pre></td></tr></table></figure></p>
+<p>其实，有更简单的方法，刚刚我们进行了两步，一步是将p11转化为数据框，再添加了一列变量名。而在大神<code>tibble</code>包中有个函数可以直接做到这步，就是<code>enframe</code>:</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p11</span><br><span class="line">enframe(p11, name = <span class="string">'variables'</span>, value = <span class="string">'P value'</span>)</span><br></pre></td></tr></table></figure>
 <dl class="dl-horizontal">
     <dt>x1</dt>
         <dd>0.02</dd>
