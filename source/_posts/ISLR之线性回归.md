@@ -1,7 +1,7 @@
 ---
-title: Chapter 3 Linear Regression
-date: 2018-02-28 18:16:25
-tags: [linear regression, R, regression]
+title: ISLR之线性回归
+date: 2018-03-01 00:31:06
+tags: [linear regression, R, regression, ISLR]
 categories: 读书笔记
 mathjax: true
 toc: true
@@ -13,6 +13,7 @@ toc: true
 
 
 ## 简单线性回归
+简单的线性回归，里面的知识点确并不是想象中的那么简单。。。
 
 $$Y\approx\beta_0+\beta_1X$$
 $$\hat{y}=\hat{\beta_0}+\hat{\beta_1}x$$
@@ -75,18 +76,18 @@ head(advdf)
 <table>
 <thead><tr><th scope=col>X</th><th scope=col>TV</th><th scope=col>radio</th><th scope=col>newspaper</th><th scope=col>sales</th></tr></thead>
 <tbody>
-	<tr><td>1    </td><td>230.1</td><td>37.8 </td><td>69.2 </td><td>22.1 </td></tr>
-	<tr><td>2    </td><td> 44.5</td><td>39.3 </td><td>45.1 </td><td>10.4 </td></tr>
-	<tr><td>3    </td><td> 17.2</td><td>45.9 </td><td>69.3 </td><td> 9.3 </td></tr>
-	<tr><td>4    </td><td>151.5</td><td>41.3 </td><td>58.5 </td><td>18.5 </td></tr>
-	<tr><td>5    </td><td>180.8</td><td>10.8 </td><td>58.4 </td><td>12.9 </td></tr>
-	<tr><td>6    </td><td>  8.7</td><td>48.9 </td><td>75.0 </td><td> 7.2 </td></tr>
+    <tr><td>1    </td><td>230.1</td><td>37.8 </td><td>69.2 </td><td>22.1 </td></tr>
+    <tr><td>2    </td><td> 44.5</td><td>39.3 </td><td>45.1 </td><td>10.4 </td></tr>
+    <tr><td>3    </td><td> 17.2</td><td>45.9 </td><td>69.3 </td><td> 9.3 </td></tr>
+    <tr><td>4    </td><td>151.5</td><td>41.3 </td><td>58.5 </td><td>18.5 </td></tr>
+    <tr><td>5    </td><td>180.8</td><td>10.8 </td><td>58.4 </td><td>12.9 </td></tr>
+    <tr><td>6    </td><td>  8.7</td><td>48.9 </td><td>75.0 </td><td> 7.2 </td></tr>
 </tbody>
 </table>
 
 
 
-#### TV广告投入对销量影响
+#### （1）TV广告投入对销量影响
 
 
 ```R
@@ -102,7 +103,7 @@ advdf %>%
 ![png](\images\output_14_1.png)
 
 
-#### 多重线性回归
+##### 多重线性回归
 
 
 ```R
@@ -129,7 +130,7 @@ summary(fit)
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 1.686 on 196 degrees of freedom
-    Multiple R-squared:  0.8972,	Adjusted R-squared:  0.8956 
+    Multiple R-squared:  0.8972,    Adjusted R-squared:  0.8956 
     F-statistic: 570.3 on 3 and 196 DF,  p-value: < 2.2e-16
     
 
@@ -155,10 +156,10 @@ confint(fit)
 <table>
 <thead><tr><th></th><th scope=col>2.5 %</th><th scope=col>97.5 %</th></tr></thead>
 <tbody>
-	<tr><th scope=row>(Intercept)</th><td> 2.32376228</td><td>3.55401646 </td></tr>
-	<tr><th scope=row>TV</th><td> 0.04301371</td><td>0.04851558 </td></tr>
-	<tr><th scope=row>radio</th><td> 0.17154745</td><td>0.20551259 </td></tr>
-	<tr><th scope=row>newspaper</th><td>-0.01261595</td><td>0.01054097 </td></tr>
+    <tr><th scope=row>(Intercept)</th><td> 2.32376228</td><td>3.55401646 </td></tr>
+    <tr><th scope=row>TV</th><td> 0.04301371</td><td>0.04851558 </td></tr>
+    <tr><th scope=row>radio</th><td> 0.17154745</td><td>0.20551259 </td></tr>
+    <tr><th scope=row>newspaper</th><td>-0.01261595</td><td>0.01054097 </td></tr>
 </tbody>
 </table>
 
@@ -207,18 +208,18 @@ summary(fit2)
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 0.9435 on 196 degrees of freedom
-    Multiple R-squared:  0.9678,	Adjusted R-squared:  0.9673 
+    Multiple R-squared:  0.9678,    Adjusted R-squared:  0.9673 
     F-statistic:  1963 on 3 and 196 DF,  p-value: < 2.2e-16
     
 
 
 增加交互项后$R^2$增加到了0.96.
 
-## 3.5 KNN回归
+## KNN回归
 给定k值和预测点$x_0$，首先确定k个最接近$x_0$的训练观测，,记为$\scr{N_0}$，用这些数据的平均值来估计$f(x_0)$。
 $$\hat{f(x_0)}=\frac{1}{K}\sum_{x_i\in\scr{N_0}}y_i$$
 
-## 3.6 Lab: Linear Regression
+## Lab: Linear Regression
 
 
 ```R
@@ -238,12 +239,12 @@ head(Boston)
 <table>
 <thead><tr><th scope=col>crim</th><th scope=col>zn</th><th scope=col>indus</th><th scope=col>chas</th><th scope=col>nox</th><th scope=col>rm</th><th scope=col>age</th><th scope=col>dis</th><th scope=col>rad</th><th scope=col>tax</th><th scope=col>ptratio</th><th scope=col>black</th><th scope=col>lstat</th><th scope=col>medv</th></tr></thead>
 <tbody>
-	<tr><td>0.00632</td><td>18     </td><td>2.31   </td><td>0      </td><td>0.538  </td><td>6.575  </td><td>65.2   </td><td>4.0900 </td><td>1      </td><td>296    </td><td>15.3   </td><td>396.90 </td><td>4.98   </td><td>24.0   </td></tr>
-	<tr><td>0.02731</td><td> 0     </td><td>7.07   </td><td>0      </td><td>0.469  </td><td>6.421  </td><td>78.9   </td><td>4.9671 </td><td>2      </td><td>242    </td><td>17.8   </td><td>396.90 </td><td>9.14   </td><td>21.6   </td></tr>
-	<tr><td>0.02729</td><td> 0     </td><td>7.07   </td><td>0      </td><td>0.469  </td><td>7.185  </td><td>61.1   </td><td>4.9671 </td><td>2      </td><td>242    </td><td>17.8   </td><td>392.83 </td><td>4.03   </td><td>34.7   </td></tr>
-	<tr><td>0.03237</td><td> 0     </td><td>2.18   </td><td>0      </td><td>0.458  </td><td>6.998  </td><td>45.8   </td><td>6.0622 </td><td>3      </td><td>222    </td><td>18.7   </td><td>394.63 </td><td>2.94   </td><td>33.4   </td></tr>
-	<tr><td>0.06905</td><td> 0     </td><td>2.18   </td><td>0      </td><td>0.458  </td><td>7.147  </td><td>54.2   </td><td>6.0622 </td><td>3      </td><td>222    </td><td>18.7   </td><td>396.90 </td><td>5.33   </td><td>36.2   </td></tr>
-	<tr><td>0.02985</td><td> 0     </td><td>2.18   </td><td>0      </td><td>0.458  </td><td>6.430  </td><td>58.7   </td><td>6.0622 </td><td>3      </td><td>222    </td><td>18.7   </td><td>394.12 </td><td>5.21   </td><td>28.7   </td></tr>
+    <tr><td>0.00632</td><td>18     </td><td>2.31   </td><td>0      </td><td>0.538  </td><td>6.575  </td><td>65.2   </td><td>4.0900 </td><td>1      </td><td>296    </td><td>15.3   </td><td>396.90 </td><td>4.98   </td><td>24.0   </td></tr>
+    <tr><td>0.02731</td><td> 0     </td><td>7.07   </td><td>0      </td><td>0.469  </td><td>6.421  </td><td>78.9   </td><td>4.9671 </td><td>2      </td><td>242    </td><td>17.8   </td><td>396.90 </td><td>9.14   </td><td>21.6   </td></tr>
+    <tr><td>0.02729</td><td> 0     </td><td>7.07   </td><td>0      </td><td>0.469  </td><td>7.185  </td><td>61.1   </td><td>4.9671 </td><td>2      </td><td>242    </td><td>17.8   </td><td>392.83 </td><td>4.03   </td><td>34.7   </td></tr>
+    <tr><td>0.03237</td><td> 0     </td><td>2.18   </td><td>0      </td><td>0.458  </td><td>6.998  </td><td>45.8   </td><td>6.0622 </td><td>3      </td><td>222    </td><td>18.7   </td><td>394.63 </td><td>2.94   </td><td>33.4   </td></tr>
+    <tr><td>0.06905</td><td> 0     </td><td>2.18   </td><td>0      </td><td>0.458  </td><td>7.147  </td><td>54.2   </td><td>6.0622 </td><td>3      </td><td>222    </td><td>18.7   </td><td>396.90 </td><td>5.33   </td><td>36.2   </td></tr>
+    <tr><td>0.02985</td><td> 0     </td><td>2.18   </td><td>0      </td><td>0.458  </td><td>6.430  </td><td>58.7   </td><td>6.0622 </td><td>3      </td><td>222    </td><td>18.7   </td><td>394.12 </td><td>5.21   </td><td>28.7   </td></tr>
 </tbody>
 </table>
 
@@ -276,7 +277,7 @@ simple.fit
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 6.216 on 504 degrees of freedom
-    Multiple R-squared:  0.5441,	Adjusted R-squared:  0.5432 
+    Multiple R-squared:  0.5441,    Adjusted R-squared:  0.5432 
     F-statistic: 601.6 on 1 and 504 DF,  p-value: < 2.2e-16
     
 
@@ -289,18 +290,18 @@ names(simple.lm)
 
 
 <ol class=list-inline>
-	<li>'coefficients'</li>
-	<li>'residuals'</li>
-	<li>'effects'</li>
-	<li>'rank'</li>
-	<li>'fitted.values'</li>
-	<li>'assign'</li>
-	<li>'qr'</li>
-	<li>'df.residual'</li>
-	<li>'xlevels'</li>
-	<li>'call'</li>
-	<li>'terms'</li>
-	<li>'model'</li>
+    <li>'coefficients'</li>
+    <li>'residuals'</li>
+    <li>'effects'</li>
+    <li>'rank'</li>
+    <li>'fitted.values'</li>
+    <li>'assign'</li>
+    <li>'qr'</li>
+    <li>'df.residual'</li>
+    <li>'xlevels'</li>
+    <li>'call'</li>
+    <li>'terms'</li>
+    <li>'model'</li>
 </ol>
 
 
@@ -315,8 +316,8 @@ confint(simple.lm)
 <table>
 <thead><tr><th></th><th scope=col>2.5 %</th><th scope=col>97.5 %</th></tr></thead>
 <tbody>
-	<tr><th scope=row>(Intercept)</th><td>33.448457 </td><td>35.6592247</td></tr>
-	<tr><th scope=row>lstat</th><td>-1.026148 </td><td>-0.8739505</td></tr>
+    <tr><th scope=row>(Intercept)</th><td>33.448457 </td><td>35.6592247</td></tr>
+    <tr><th scope=row>lstat</th><td>-1.026148 </td><td>-0.8739505</td></tr>
 </tbody>
 </table>
 
@@ -332,9 +333,9 @@ predict(simple.lm, data.frame(lstat = c(5, 10, 15)), interval = 'confidence')
 <table>
 <thead><tr><th></th><th scope=col>fit</th><th scope=col>lwr</th><th scope=col>upr</th></tr></thead>
 <tbody>
-	<tr><th scope=row>1</th><td>29.80359</td><td>29.00741</td><td>30.59978</td></tr>
-	<tr><th scope=row>2</th><td>25.05335</td><td>24.47413</td><td>25.63256</td></tr>
-	<tr><th scope=row>3</th><td>20.30310</td><td>19.73159</td><td>20.87461</td></tr>
+    <tr><th scope=row>1</th><td>29.80359</td><td>29.00741</td><td>30.59978</td></tr>
+    <tr><th scope=row>2</th><td>25.05335</td><td>24.47413</td><td>25.63256</td></tr>
+    <tr><th scope=row>3</th><td>20.30310</td><td>19.73159</td><td>20.87461</td></tr>
 </tbody>
 </table>
 
@@ -350,9 +351,9 @@ predict(simple.lm, data.frame(lstat = c(5, 10, 15)), interval = 'prediction')
 <table>
 <thead><tr><th></th><th scope=col>fit</th><th scope=col>lwr</th><th scope=col>upr</th></tr></thead>
 <tbody>
-	<tr><th scope=row>1</th><td>29.80359 </td><td>17.565675</td><td>42.04151 </td></tr>
-	<tr><th scope=row>2</th><td>25.05335 </td><td>12.827626</td><td>37.27907 </td></tr>
-	<tr><th scope=row>3</th><td>20.30310 </td><td> 8.077742</td><td>32.52846 </td></tr>
+    <tr><th scope=row>1</th><td>29.80359 </td><td>17.565675</td><td>42.04151 </td></tr>
+    <tr><th scope=row>2</th><td>25.05335 </td><td>12.827626</td><td>37.27907 </td></tr>
+    <tr><th scope=row>3</th><td>20.30310 </td><td> 8.077742</td><td>32.52846 </td></tr>
 </tbody>
 </table>
 
@@ -481,7 +482,7 @@ mult.fit
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 4.745 on 492 degrees of freedom
-    Multiple R-squared:  0.7406,	Adjusted R-squared:  0.7338 
+    Multiple R-squared:  0.7406,    Adjusted R-squared:  0.7338 
     F-statistic: 108.1 on 13 and 492 DF,  p-value: < 2.2e-16
     
 
@@ -493,17 +494,17 @@ names(mult.fit)
 
 
 <ol class=list-inline>
-	<li>'call'</li>
-	<li>'terms'</li>
-	<li>'residuals'</li>
-	<li>'coefficients'</li>
-	<li>'aliased'</li>
-	<li>'sigma'</li>
-	<li>'df'</li>
-	<li>'r.squared'</li>
-	<li>'adj.r.squared'</li>
-	<li>'fstatistic'</li>
-	<li>'cov.unscaled'</li>
+    <li>'call'</li>
+    <li>'terms'</li>
+    <li>'residuals'</li>
+    <li>'coefficients'</li>
+    <li>'aliased'</li>
+    <li>'sigma'</li>
+    <li>'df'</li>
+    <li>'r.squared'</li>
+    <li>'adj.r.squared'</li>
+    <li>'fstatistic'</li>
+    <li>'cov.unscaled'</li>
 </ol>
 
 
@@ -516,32 +517,32 @@ car::vif(mult.lm)
 
 
 <dl class=dl-horizontal>
-	<dt>crim</dt>
-		<dd>1.79219154743324</dd>
-	<dt>zn</dt>
-		<dd>2.29875817874944</dd>
-	<dt>indus</dt>
-		<dd>3.99159641834602</dd>
-	<dt>chas</dt>
-		<dd>1.07399532755379</dd>
-	<dt>nox</dt>
-		<dd>4.39371984757748</dd>
-	<dt>rm</dt>
-		<dd>1.93374443578326</dd>
-	<dt>age</dt>
-		<dd>3.10082551281533</dd>
-	<dt>dis</dt>
-		<dd>3.95594490637272</dd>
-	<dt>rad</dt>
-		<dd>7.48449633527445</dd>
-	<dt>tax</dt>
-		<dd>9.00855394759706</dd>
-	<dt>ptratio</dt>
-		<dd>1.79908404924889</dd>
-	<dt>black</dt>
-		<dd>1.34852107640637</dd>
-	<dt>lstat</dt>
-		<dd>2.94149107809193</dd>
+    <dt>crim</dt>
+        <dd>1.79219154743324</dd>
+    <dt>zn</dt>
+        <dd>2.29875817874944</dd>
+    <dt>indus</dt>
+        <dd>3.99159641834602</dd>
+    <dt>chas</dt>
+        <dd>1.07399532755379</dd>
+    <dt>nox</dt>
+        <dd>4.39371984757748</dd>
+    <dt>rm</dt>
+        <dd>1.93374443578326</dd>
+    <dt>age</dt>
+        <dd>3.10082551281533</dd>
+    <dt>dis</dt>
+        <dd>3.95594490637272</dd>
+    <dt>rad</dt>
+        <dd>7.48449633527445</dd>
+    <dt>tax</dt>
+        <dd>9.00855394759706</dd>
+    <dt>ptratio</dt>
+        <dd>1.79908404924889</dd>
+    <dt>black</dt>
+        <dd>1.34852107640637</dd>
+    <dt>lstat</dt>
+        <dd>2.94149107809193</dd>
 </dl>
 
 
@@ -582,7 +583,7 @@ mult.lm2 <- lm(medv ~ . -age, data = Boston)
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 4.74 on 493 degrees of freedom
-    Multiple R-squared:  0.7406,	Adjusted R-squared:  0.7343 
+    Multiple R-squared:  0.7406,    Adjusted R-squared:  0.7343 
     F-statistic: 117.3 on 12 and 493 DF,  p-value: < 2.2e-16
     
 
@@ -623,7 +624,7 @@ summary(mult.lm22)
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 4.74 on 493 degrees of freedom
-    Multiple R-squared:  0.7406,	Adjusted R-squared:  0.7343 
+    Multiple R-squared:  0.7406,    Adjusted R-squared:  0.7343 
     F-statistic: 117.3 on 12 and 493 DF,  p-value: < 2.2e-16
     
 
@@ -662,7 +663,7 @@ fit2 %>% summary
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 5.524 on 503 degrees of freedom
-    Multiple R-squared:  0.6407,	Adjusted R-squared:  0.6393 
+    Multiple R-squared:  0.6407,    Adjusted R-squared:  0.6393 
     F-statistic: 448.5 on 2 and 503 DF,  p-value: < 2.2e-16
     
 
@@ -678,8 +679,8 @@ anova(lm(medv ~ lstat, data = Boston), fit2)
 <table>
 <thead><tr><th scope=col>Res.Df</th><th scope=col>RSS</th><th scope=col>Df</th><th scope=col>Sum of Sq</th><th scope=col>F</th><th scope=col>Pr(&gt;F)</th></tr></thead>
 <tbody>
-	<tr><td>504         </td><td>19472.38    </td><td>NA          </td><td>      NA    </td><td>      NA    </td><td>          NA</td></tr>
-	<tr><td>503         </td><td>15347.24    </td><td> 1          </td><td>4125.138    </td><td>135.1998    </td><td>7.630116e-28</td></tr>
+    <tr><td>504         </td><td>19472.38    </td><td>NA          </td><td>      NA    </td><td>      NA    </td><td>          NA</td></tr>
+    <tr><td>503         </td><td>15347.24    </td><td> 1          </td><td>4125.138    </td><td>135.1998    </td><td>7.630116e-28</td></tr>
 </tbody>
 </table>
 
@@ -710,12 +711,12 @@ head(Carseats)
 <table>
 <thead><tr><th scope=col>Sales</th><th scope=col>CompPrice</th><th scope=col>Income</th><th scope=col>Advertising</th><th scope=col>Population</th><th scope=col>Price</th><th scope=col>ShelveLoc</th><th scope=col>Age</th><th scope=col>Education</th><th scope=col>Urban</th><th scope=col>US</th></tr></thead>
 <tbody>
-	<tr><td> 9.50 </td><td>138   </td><td> 73   </td><td>11    </td><td>276   </td><td>120   </td><td>Bad   </td><td>42    </td><td>17    </td><td>Yes   </td><td>Yes   </td></tr>
-	<tr><td>11.22 </td><td>111   </td><td> 48   </td><td>16    </td><td>260   </td><td> 83   </td><td>Good  </td><td>65    </td><td>10    </td><td>Yes   </td><td>Yes   </td></tr>
-	<tr><td>10.06 </td><td>113   </td><td> 35   </td><td>10    </td><td>269   </td><td> 80   </td><td>Medium</td><td>59    </td><td>12    </td><td>Yes   </td><td>Yes   </td></tr>
-	<tr><td> 7.40 </td><td>117   </td><td>100   </td><td> 4    </td><td>466   </td><td> 97   </td><td>Medium</td><td>55    </td><td>14    </td><td>Yes   </td><td>Yes   </td></tr>
-	<tr><td> 4.15 </td><td>141   </td><td> 64   </td><td> 3    </td><td>340   </td><td>128   </td><td>Bad   </td><td>38    </td><td>13    </td><td>Yes   </td><td>No    </td></tr>
-	<tr><td>10.81 </td><td>124   </td><td>113   </td><td>13    </td><td>501   </td><td> 72   </td><td>Bad   </td><td>78    </td><td>16    </td><td>No    </td><td>Yes   </td></tr>
+    <tr><td> 9.50 </td><td>138   </td><td> 73   </td><td>11    </td><td>276   </td><td>120   </td><td>Bad   </td><td>42    </td><td>17    </td><td>Yes   </td><td>Yes   </td></tr>
+    <tr><td>11.22 </td><td>111   </td><td> 48   </td><td>16    </td><td>260   </td><td> 83   </td><td>Good  </td><td>65    </td><td>10    </td><td>Yes   </td><td>Yes   </td></tr>
+    <tr><td>10.06 </td><td>113   </td><td> 35   </td><td>10    </td><td>269   </td><td> 80   </td><td>Medium</td><td>59    </td><td>12    </td><td>Yes   </td><td>Yes   </td></tr>
+    <tr><td> 7.40 </td><td>117   </td><td>100   </td><td> 4    </td><td>466   </td><td> 97   </td><td>Medium</td><td>55    </td><td>14    </td><td>Yes   </td><td>Yes   </td></tr>
+    <tr><td> 4.15 </td><td>141   </td><td> 64   </td><td> 3    </td><td>340   </td><td>128   </td><td>Bad   </td><td>38    </td><td>13    </td><td>Yes   </td><td>No    </td></tr>
+    <tr><td>10.81 </td><td>124   </td><td>113   </td><td>13    </td><td>501   </td><td> 72   </td><td>Bad   </td><td>78    </td><td>16    </td><td>No    </td><td>Yes   </td></tr>
 </tbody>
 </table>
 
@@ -731,9 +732,9 @@ contrasts(Carseats$ShelveLoc)
 <table>
 <thead><tr><th></th><th scope=col>Good</th><th scope=col>Medium</th></tr></thead>
 <tbody>
-	<tr><th scope=row>Bad</th><td>0</td><td>0</td></tr>
-	<tr><th scope=row>Good</th><td>1</td><td>0</td></tr>
-	<tr><th scope=row>Medium</th><td>0</td><td>1</td></tr>
+    <tr><th scope=row>Bad</th><td>0</td><td>0</td></tr>
+    <tr><th scope=row>Good</th><td>1</td><td>0</td></tr>
+    <tr><th scope=row>Medium</th><td>0</td><td>1</td></tr>
 </tbody>
 </table>
 
@@ -774,7 +775,7 @@ lm(Sales ~ . + Income : Advertising + Price : Age, data = Carseats) %>% summary
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 1.011 on 386 degrees of freedom
-    Multiple R-squared:  0.8761,	Adjusted R-squared:  0.8719 
+    Multiple R-squared:  0.8761,    Adjusted R-squared:  0.8719 
     F-statistic:   210 on 13 and 386 DF,  p-value: < 2.2e-16
     
 
@@ -808,7 +809,7 @@ lm(Sales ~ Population + Urban + US, data = Carseats) %>% summary
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 2.787 on 396 degrees of freedom
-    Multiple R-squared:  0.03342,	Adjusted R-squared:  0.02609 
+    Multiple R-squared:  0.03342,   Adjusted R-squared:  0.02609 
     F-statistic: 4.563 on 3 and 396 DF,  p-value: 0.003713
     
 
@@ -840,7 +841,7 @@ ex10.fit %>% summary
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 2.783 on 398 degrees of freedom
-    Multiple R-squared:  0.03136,	Adjusted R-squared:  0.02893 
+    Multiple R-squared:  0.03136,   Adjusted R-squared:  0.02893 
     F-statistic: 12.89 on 1 and 398 DF,  p-value: 0.0003723
     
 
@@ -900,7 +901,7 @@ summary(ex11.lm)
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 0.9586 on 99 degrees of freedom
-    Multiple R-squared:  0.7798,	Adjusted R-squared:  0.7776 
+    Multiple R-squared:  0.7798,    Adjusted R-squared:  0.7776 
     F-statistic: 350.7 on 1 and 99 DF,  p-value: < 2.2e-16
     
 
@@ -941,7 +942,7 @@ lm(x ~ y + 0) %>% summary
     Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     
     Residual standard error: 0.4246 on 99 degrees of freedom
-    Multiple R-squared:  0.7798,	Adjusted R-squared:  0.7776 
+    Multiple R-squared:  0.7798,    Adjusted R-squared:  0.7776 
     F-statistic: 350.7 on 1 and 99 DF,  p-value: < 2.2e-16
     
 
@@ -960,8 +961,8 @@ summary(ex11.fit1)$coefficients
 <table>
 <thead><tr><th></th><th scope=col>Estimate</th><th scope=col>Std. Error</th><th scope=col>t value</th><th scope=col>Pr(&gt;|t|)</th></tr></thead>
 <tbody>
-	<tr><th scope=row>(Intercept)</th><td>-0.03769261 </td><td>0.09698729  </td><td>-0.3886346  </td><td>6.983896e-01</td></tr>
-	<tr><th scope=row>x</th><td> 1.99893961 </td><td>0.10772703  </td><td>18.5555993  </td><td>7.723851e-34</td></tr>
+    <tr><th scope=row>(Intercept)</th><td>-0.03769261 </td><td>0.09698729  </td><td>-0.3886346  </td><td>6.983896e-01</td></tr>
+    <tr><th scope=row>x</th><td> 1.99893961 </td><td>0.10772703  </td><td>18.5555993  </td><td>7.723851e-34</td></tr>
 </tbody>
 </table>
 
@@ -976,8 +977,8 @@ summary(ex11.fit2)$coefficients
 <table>
 <thead><tr><th></th><th scope=col>Estimate</th><th scope=col>Std. Error</th><th scope=col>t value</th><th scope=col>Pr(&gt;|t|)</th></tr></thead>
 <tbody>
-	<tr><th scope=row>(Intercept)</th><td>0.03880394  </td><td>0.04266144  </td><td> 0.9095787  </td><td>3.652764e-01</td></tr>
-	<tr><th scope=row>y</th><td>0.38942451  </td><td>0.02098690  </td><td>18.5555993  </td><td>7.723851e-34</td></tr>
+    <tr><th scope=row>(Intercept)</th><td>0.03880394  </td><td>0.04266144  </td><td> 0.9095787  </td><td>3.652764e-01</td></tr>
+    <tr><th scope=row>y</th><td>0.38942451  </td><td>0.02098690  </td><td>18.5555993  </td><td>7.723851e-34</td></tr>
 </tbody>
 </table>
 
