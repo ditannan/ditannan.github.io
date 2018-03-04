@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[R markdown tip: shortcut of insert R code]]></title>
+    <url>%2F2018%2F03%2F04%2FR-markdown-tip-shortcut-of-insert-R-code%2F</url>
+    <content type="text"><![CDATA[快捷键可以提高工作的效率，上回简单介绍了一下再R中使用的快捷键，点击Rstudio快捷键查看。 ctrl+alt+l而在使用R markdown输入代码时，还有一些专门的快捷键。在r markdown中操作时，使用最多应该要属插入代码了，需要将代码包裹在一对```中,如果手动输入甚是麻烦。但是可以通过使用快捷键ctrl+alt+l，一步搞定。 但是，对，这还有但是，如果你输入没反应的话，那就继续往下看。因为我的开始就是没反应的。点击Tools-&gt;Modify Keyboard Shortcuts，会出现对快捷键进行设置的地方，找到如下位置，设置成如图所示： 之前的ctrl+alt+l被设置成了上面的红框，所以才无法使用。 既然都到这个界面了，那大家也可以自己设置快捷键了。好了，这篇就到这了…… Peace out~]]></content>
+      <categories>
+        <category>R</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>Rstudio</tag>
+        <tag>R markdown</tag>
+        <tag>shortcut</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[新年计划]]></title>
     <url>%2F2018%2F03%2F04%2Fplan2018%2F</url>
     <content type="text"><![CDATA[前言元宵过完，2018年也算正式拉开帷幕了。一看日期，不是已经拉开三个月了吗！？好吧，总是后知后觉的我今早想了下今年所要完成的一些琐事，记下来以便鞭策自己。 计划 学习html，进行中…… 学习css，主要是为了博客的美化 熟练R语言，本来想着用精通两字，希望今年能完成熟练，精通作为明年目标。那么我的SAS怎么办呢，SAS离我越来越远了……TT 学习并熟练使用ggplot2包进行可视化，寒假在家对着R Graphics Cookbook，敲代码，已经学习了一大半，需要实战巩固。学习plotly和shiny…… 掌握潜增长模型，毕竟是毕业课题…… 学习基本网络爬虫，会简单爬虫，一是觉得还挺有意思，二是也许找工作有用。 学习数学知识，先从大一的数学分析开始吧，深深体会到学什么基础一定要打好，才能走的更远 学习统计知识，机器学习，现在正在学习ISLR,计划儿童节前学完。这个是个长久的过程，谁让我们医学生数学功底薄弱呢…… 呃~还有个重中之重的事，就是发表SCI……细思极烦…… 不知道有没有时间学的一些 数据库系统，掌握SQL，之前学了一点点，对SQL语言还不能熟练掌握； Tableau，买的那本《Tableau数据可视化从入门到精通》还躺在那…… 已完成 还没有，hhhh…… 说的比较杂，经过这么多年的自我反思反省，有个深刻的感受，对于新知识的学习，很多时候开始是蒙蔽状态，这并不能说明自己能力不够，学不来，二是时机未到，先放一放，过段时间再回来，也许就懂了……]]></content>
