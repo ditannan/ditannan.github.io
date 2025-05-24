@@ -9,4 +9,4 @@ description: The talking of Charlie.
 title: About
 ---
 
-todo
+记录周深演唱会现场的talking、采访的talking。

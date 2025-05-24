@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Charlie</title>
+    <title>Posts on TALKING</title>
     <link>https://charlietalking.com/post/</link>
-    <description>Recent content in Posts on Charlie</description>
+    <description>Recent content in Posts on TALKING</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Journeys end in our meeting.</copyright>
     <lastBuildDate>Sat, 24 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://charlietalking.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>9.29Hz巡回演唱会Talking合集</title>
+      <title>“9.29Hz”巡回演唱会Talking合集</title>
       <link>https://charlietalking.com/post/9.29hz-talking/</link>
       <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
       <guid>https://charlietalking.com/post/9.29hz-talking/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://9.29hz.charlietalking.com&#34;&gt;9.29Hz巡回演唱会talking合集&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>采访Talking合集</title>
+      <link>https://charlietalking.com/post/interview-talking/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://charlietalking.com/post/interview-talking/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://interview.charlietalking.com&#34;&gt;采访Talking合集&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 baseURL: https://charlietalking.com/
-title: Charlie
+title: TALKING
 author: 我和老婆是生米
 copyright: Journeys end in our meeting.
 languageCode: en
@@ -12,9 +12,9 @@ pagination:
   theme: hugo-paper
 params:
   avatar: xzm9210@gmail.com
-  bio: Charlie Talking
+  bio: Documenting Charlie's Talkings
   color: linen
-  name: Charlie
+  name: BiaoBiao
   favicon: "img/biaobiao.ico"
 markup:
   goldmark:
