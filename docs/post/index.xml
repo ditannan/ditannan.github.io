@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Charlie</title>
-    <link>https://hugo-paper.vercel.app/post/</link>
+    <link>https://charlietalking.com/post/</link>
     <description>Recent content in Posts on Charlie</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Journeys end in our meeting.</copyright>
     <lastBuildDate>Sat, 24 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hugo-paper.vercel.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://charlietalking.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>9.29Hz巡回演唱会Talking合集</title>
-      <link>https://hugo-paper.vercel.app/post/9.29hz-talking/</link>
+      <link>https://charlietalking.com/post/9.29hz-talking/</link>
       <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://hugo-paper.vercel.app/post/9.29hz-talking/</guid>
+      <guid>https://charlietalking.com/post/9.29hz-talking/</guid>
       <description>&lt;p&gt;9.29Hz巡回演唱会talking合集。&lt;/p&gt;</description>
     </item>
   </channel>

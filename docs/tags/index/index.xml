@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on Charlie</title>
-    <link>https://hugo-paper.vercel.app/tags/index/</link>
+    <link>https://charlietalking.com/tags/index/</link>
     <description>Recent content in Index on Charlie</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Journeys end in our meeting.</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://hugo-paper.vercel.app/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://charlietalking.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
