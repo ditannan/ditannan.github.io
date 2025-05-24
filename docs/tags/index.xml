@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Charlie</title>
+    <link>https://hugo-paper.vercel.app/tags/</link>
+    <description>Recent content in Tags on Charlie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Journeys end in our meeting.</copyright>
+    <lastBuildDate>Sat, 24 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hugo-paper.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9.29Hz</title>
+      <link>https://hugo-paper.vercel.app/tags/9.29hz/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-paper.vercel.app/tags/9.29hz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Index</title>
+      <link>https://hugo-paper.vercel.app/tags/index/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-paper.vercel.app/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Talking</title>
+      <link>https://hugo-paper.vercel.app/tags/talking/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-paper.vercel.app/tags/talking/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
