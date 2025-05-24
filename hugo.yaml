@@ -15,7 +15,7 @@ params:
   bio: Documenting Charlie's Talkings
   color: linen
   name: BiaoBiao
-  favicon: "img/biaobiao.ico"
+  favicon: biaobiao.ico
 markup:
   goldmark:
     renderer:
