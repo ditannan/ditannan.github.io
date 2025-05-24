@@ -11,7 +11,7 @@ pagination:
   pagerSize: 10
   theme: hugo-paper
 params:
-  avatar: img/biaobiao.jpg
+  avatar: xzm9210@gmail.com
   bio: Charlie Talking
   color: linen
   name: Charlie
