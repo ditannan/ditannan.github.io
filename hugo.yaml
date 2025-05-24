@@ -1,0 +1,54 @@
+baseURL: https://hugo-paper.vercel.app/
+title: Charlie
+author: 我和老婆是生米
+copyright: Journeys end in our meeting.
+languageCode: en
+DefaultContentLanguage: en
+enableInlineShortcodes: yes
+ignoreErrors: error-remote-getjson
+pagination:
+  pagerSize: 10
+  theme: hugo-paper
+params:
+  avatar: xzm9210@gmail.com
+  bio: Charlie Talking
+  color: linen
+  name: Charlie
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: yes
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 10
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+privacy:
+  instagram:
+    disabled: no
+    simple: yes
+  vimeo:
+    disabled: no
+    simple: yes
+  x:
+    disabled: no
+    enableDNT: yes
+    simple: yes
+  youtube:
+    disabled: no
+    privacyEnhanced: yes
+services:
+  instagram:
+    disableInlineCSS: yes
+  x:
+    disableInlineCSS: yes

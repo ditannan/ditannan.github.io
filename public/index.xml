@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Charlie</title>
+    <link>https://hugo-paper.vercel.app/</link>
+    <description>Recent content on Charlie</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Journeys end in our meeting.</copyright>
+    <lastBuildDate>Sat, 24 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hugo-paper.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9.29Hz巡回演唱会Talking合集</title>
+      <link>https://hugo-paper.vercel.app/post/9.29hz-talking/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-paper.vercel.app/post/9.29hz-talking/</guid>
+      <description>&lt;p&gt;9.29Hz巡回演唱会talking合集。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://hugo-paper.vercel.app/archives/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-paper.vercel.app/archives/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://hugo-paper.vercel.app/about/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-paper.vercel.app/about/</guid>
+      <description>&lt;p&gt;todo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://hugo-paper.vercel.app/contact/</link>
+      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-paper.vercel.app/contact/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://weibo.com/u/6119141336&#34;&gt;微博&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.xiaohongshu.com/user/profile/5d63e315000000000100ba5b?xsec_token=YBYAsqnVCXCzO2mLbDSR7yMkuIirkQgsZt9j0jHVjRylY=&amp;amp;xsec_source=app_share&amp;amp;xhsshare=CopyLink&amp;amp;appuid=5d63e315000000000100ba5b&amp;amp;apptime=1748074418&amp;amp;share_id=4468bc566389449a9aa020d1e2b3e2e3&#34;&gt;小红书&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
