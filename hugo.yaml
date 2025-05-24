@@ -6,15 +6,16 @@ languageCode: en
 DefaultContentLanguage: en
 enableInlineShortcodes: yes
 ignoreErrors: error-remote-getjson
+publishDir: "docs"
 pagination:
   pagerSize: 10
   theme: hugo-paper
 params:
-  avatar: xzm9210@gmail.com
+  avatar: img/biaobiao.jpg
   bio: Charlie Talking
   color: linen
   name: Charlie
-
+  favicon: "img/biaobiao.ico"
 markup:
   goldmark:
     renderer:
