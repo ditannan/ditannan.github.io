@@ -11,7 +11,7 @@ pagination:
   pagerSize: 10
   theme: hugo-paper
 params:
-  avatar: xzm9210@gmail.com
+  avatar: https://charlietalking.com/biaobiao.jpg
   bio: Documenting Charlie's Talkings
   color: linen
   name: BiaoBiao
