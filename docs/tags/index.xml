@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Journeys end in our meeting.</copyright>
-    <lastBuildDate>Sat, 24 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://charlietalking.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Index</title>
+      <link>https://charlietalking.com/tags/index/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://charlietalking.com/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ShenShen&#39;s</title>
+      <link>https://charlietalking.com/tags/shenshens/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://charlietalking.com/tags/shenshens/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Talking</title>
+      <link>https://charlietalking.com/tags/talking/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://charlietalking.com/tags/talking/</guid>
+      <description></description>
+    </item>
     <item>
       <title>9.29Hz</title>
       <link>https://charlietalking.com/tags/9.29hz/</link>
@@ -17,24 +38,10 @@
       <description></description>
     </item>
     <item>
-      <title>Index</title>
-      <link>https://charlietalking.com/tags/index/</link>
-      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://charlietalking.com/tags/index/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Interview</title>
       <link>https://charlietalking.com/tags/interview/</link>
-      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
       <guid>https://charlietalking.com/tags/interview/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Talking</title>
-      <link>https://charlietalking.com/tags/talking/</link>
-      <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://charlietalking.com/tags/talking/</guid>
       <description></description>
     </item>
   </channel>
