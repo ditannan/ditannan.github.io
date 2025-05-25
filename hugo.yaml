@@ -16,6 +16,7 @@ params:
   color: linen
   name: BiaoBiao
   favicon: biaobiao.ico
+  rss: yes
   giscus:
     repo: 'ditannan/ditannan.github.io'                 # see https://giscus.app for more details
     repoId: 'R_kgDOOvqCOQ'
