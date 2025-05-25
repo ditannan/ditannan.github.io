@@ -16,6 +16,14 @@ params:
   color: linen
   name: BiaoBiao
   favicon: biaobiao.ico
+  giscus:
+    repo: 'ditannan/ditannan.github.io'                 # see https://giscus.app for more details
+    repoId: 'R_kgDOOvqCOQ'
+    category: 'Announcements'
+    categoryId: 'DIC_kwDOOvqCOc4CqkHs'
+    mapping: 'pathname'
+    theme: 'preferred_color_scheme'
+    lang: 'zh-CN'
 markup:
   goldmark:
     renderer:
