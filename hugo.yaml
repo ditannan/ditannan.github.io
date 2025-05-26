@@ -14,9 +14,9 @@ params:
   avatar: https://charlietalking.com/biaobiao.jpg
   bio: Documenting Charlie's Talkings
   color: linen
-  name: BiaoBiao
+  name: 深深的小话
   favicon: biaobiao.ico
-  rss: yes
+  rss: no
   giscus:
     repo: 'ditannan/ditannan.github.io'                 # see https://giscus.app for more details
     repoId: 'R_kgDOOvqCOQ'
