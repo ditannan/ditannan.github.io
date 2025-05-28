@@ -16,7 +16,6 @@ params:
   color: linen
   name: 深深的小话
   favicon: biaobiao.ico
-  rss: no
   giscus:
     repo: 'ditannan/ditannan.github.io'                 # see https://giscus.app for more details
     repoId: 'R_kgDOOvqCOQ'
